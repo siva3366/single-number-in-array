@@ -1,0 +1,18 @@
+aList=[]
+bList=[]
+len1=int(input("enter length of list1"))
+for i in range(len1):
+    e1=int(input("enter element"))
+    aList.append(e1)
+    print("list A:",aList)
+    len2=int(input("enter length of list2"))
+for i in range(len2):
+    e2=int(input("enter element"))
+    aList.append(e2)
+    print("list B:",bList)
+    inSet=set.intersection(set(aList),set(bList))
+    inList=list(inSet)
+    print("-------------")
+    print("List A:",aList)
+    print("List B:",bList)
+    print("A & B:",inList)
